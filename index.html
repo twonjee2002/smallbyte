@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallByte Multiventures - Wholesale & Retail Drinks & Provisions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for body and general styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark gray text */
+        }
+        /* Container for consistent padding and max-width */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        /* Styling for section titles */
+        .section-title {
+            color: #007bff; /* Vibrant blue for titles */
+        }
+        /* Primary button styling */
+        .btn-primary {
+            background-color: #FF9900; /* Vibrant orange button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-flex; /* Use flex for icon alignment */
+            align-items: center;
+            justify-content: center;
+        }
+        /* Hover effect for primary button */
+        .btn-primary:hover {
+            background-color: #e68a00; /* Slightly darker orange on hover */
+            transform: translateY(-2px);
+        }
+        /* Card styling for product and contact sections */
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        /* Responsive grid columns for medium screens */
+        @media (min-width: 768px) {
+            .grid-cols-md-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-blue-800 text-white py-6 shadow-lg rounded-b-lg">
+        <div class="container flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-4xl font-extrabold mb-4 md:mb-0">SmallByte Multiventures</h1>
+            <nav>
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg font-medium">
+                    <li><a href="#home" class="hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#products" class="hover:text-blue-200 transition duration-300">Products</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                    <li><a href="#location" class="hover:text-blue-200 transition duration-300">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-200 to-indigo-200 text-center rounded-lg m-4">
+        <div class="container">
+            <h2 class="text-5xl font-bold text-blue-900 mb-6 leading-tight">Your One-Stop Shop for Quality Drinks & Provisions!</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                Discover a wide range of **wholesale and retail drinks** and **essential provisions** at competitive prices.
+                We're committed to serving our community in the **Lagelu local government area** with the best products.
+            </p>
+            <a href="#contact" class="btn-primary text-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Place Your Order Now!
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white rounded-lg m-4">
+        <div class="container">
+            <h2 class="text-4xl font-bold section-title text-center mb-12">Our Products</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Drinks Card -->
+                <div class="card text-center">
+                    <!-- Sample image for drinks from Unsplash -->
+                    <img src="https://images.unsplash.com/photo-1543158181-e6f9f6712285?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Assorted Drinks" class="w-full h-48 object-cover rounded-md mb-6 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x250/bfdbfe/007bff?text=Drinks';">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">Wholesale & Retail Drinks</h3>
+                    <p class="text-gray-600 mb-4">
+                        From refreshing soft drinks to energy boosters, we stock a wide variety of beverages.
+                        Perfect for events, resellers, or personal consumption.
+                    </p>
+                    <ul class="list-disc list-inside text-left text-gray-600 space-y-1">
+                        <li>Soft Drinks (Coca-Cola, Pepsi, Fanta, Sprite)</li>
+                        <li>Energy Drinks</li>
+                        <li>Juices & Water</li>
+                        <li>And much more!</li>
+                    </ul>
+                </div>
+
+                <!-- Provisions Card -->
+                <div class="card text-center">
+                    <!-- Sample image for provisions from Unsplash -->
+                    <img src="https://images.unsplash.com/photo-1583483425026-d9884323c91e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Household Provisions" class="w-full h-48 object-cover rounded-md mb-6 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x250/bfdbfe/007bff?text=Provisions';">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">Everyday Provisions</h3>
+                    <p class="text-gray-600 mb-4">
+                        Find all your daily household and personal care essentials. Quality products at affordable prices.
+                    </p>
+                    <ul class="list-disc list-inside text-left text-gray-600 space-y-1">
+                        <li>Food Stuffs (e.g., Noodles, Rice, Sugar)</li>
+                        <li>Toiletries (e.g., Soap, Toothpaste)</li>
+                        <li>Snacks (e.g., Phocus Popcorn)</li>
+                        <li>Baby Products (e.g., Maya Pampers)</li>
+                    </ul>
+                </div>
+
+                <!-- Special Offers Card (Example) -->
+                <div class="card text-center">
+                    <!-- Sample image for offers from Unsplash -->
+                    <img src="https://images.unsplash.com/photo-1578357070114-f5f4f8f4a0a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Special Offers" class="w-full h-48 object-cover rounded-md mb-6 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x250/bfdbfe/007bff?text=Offers';">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">Special Offers & Deals</h3>
+                    <p class="text-gray-600 mb-4">
+                        Visit our physical shop for exclusive deals and discounts on bulk purchases and selected items!
+                    </p>
+                    <p class="text-lg font-bold text-green-600">
+                        Check in-store for our latest promotions!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-50 rounded-lg m-4">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold section-title mb-8">Get in Touch to Place Your Order!</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Ready to stock up? Contact us directly to place your wholesale or retail orders.
+                We're here to assist you!
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                <div class="card flex-1 max-w-sm w-full">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Call Us</h3>
+                    <p class="text-gray-700 text-lg mb-4">
+                        <a href="tel:+2348062330918" class="text-blue-600 hover:underline">+234 806 233 0918</a>
+                    </p>
+                    <p class="text-gray-500 text-sm">Our lines are open during business hours.</p>
+                </div>
+
+                <div class="card flex-1 max-w-sm w-full">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Chat on WhatsApp</h3>
+                    <a href="https://wa.me/2348062330918" target="_blank" class="btn-primary text-lg font-semibold">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-16 bg-white rounded-lg m-4">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold section-title mb-8">Find Our Shop</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Visit us in person to see our full range of products and enjoy great deals!
+            </p>
+            <div class="card p-6 max-w-xl mx-auto">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Address</h3>
+                <p class="text-lg text-gray-700 mb-4">
+                    SmallByte Multiventures,
+                    <br>Lagelu Local Government Area,
+                    <br>Ibadan, Oyo State, Nigeria.
+                </p>
+                <div class="aspect-w-16 aspect-h-9 rounded-md overflow-hidden shadow-lg">
+                    <!-- Google Maps iframe, set to a general Ibadan location which includes Ejioku -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.862419084284!2d3.992224874984189!3d7.33705039266735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398f6d2f0f0f0f%3A0x123456789abcdef0!2sIbadan%2C%20Oyo%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="SmallByte Multiventures Location"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-800 text-white py-6 mt-8 rounded-t-lg">
+        <div class="container text-center text-sm">
+            <p>&copy; 2025 SmallByte Multiventures. All rights reserved.</p>
+            <p>Wholesale & Retail Drinks and Provisions.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
